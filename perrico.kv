@@ -1,0 +1,24 @@
+<PerricoWidget>:
+	orientation: 'vertical'
+	FloatLayout:
+		id: float1
+		Scatter:
+			id:esparcido
+			rotation: 0
+			Image:
+				id: imagen
+				size: (root.width/2, root.height/2)
+				pos: ((float1.width-self.width)*0.5, (float1.height-self.height)*0.5)
+				source: './img/PerricoEsquema2.png'
+		Scatter:
+			size_hint_y: None
+			height: 150
+			Label:
+				id:cartel
+				font_size: 50
+				text:' 00.00'
+				pos: (root.width*0.75, root.height*0.25)
+			
+				
+
+
